@@ -1,1 +1,30 @@
 // Mixins Here
+
+//Standard Mixin
+//Flex applied and layout is centered
+.center-layout(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//Parametric Mixin
+//Button Design
+
+.button-style(@width, @height, @font-size){
+    .center-layout();
+    border-radius: 6px;
+    width:@width;
+    height: @height;
+    background-color: @btn-bg-color;
+    color: white;
+    cursor: pointer;
+    font-size: @font-size;
+    border: 1px solid @btn-bg-color;
+
+    &:hover{
+        background: white;
+        color: @btn-bg-color;
+    }
+
+}
