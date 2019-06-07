@@ -1,11 +1,22 @@
 // Home Content
 
 .home {
+  //Animated Fade in
+
+  animation-name: fadein;
+  animation-duration: 3s;
+
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
 
   //Border Radius as per design
   header{
 
     img{
+      margin-top: 80px;//added to work with Fixed Nav
       width: 100%;
       border-radius: 8px;
     }

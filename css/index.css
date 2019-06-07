@@ -167,6 +167,9 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  top: 0;
+  width: 100%;
+  position: fixed;
 }
 .navigation nav {
   margin: 10px 0;
@@ -189,7 +192,20 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home {
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .home header img {
+  margin-top: 80px;
   width: 100%;
   border-radius: 8px;
 }
