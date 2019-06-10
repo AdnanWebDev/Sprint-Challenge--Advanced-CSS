@@ -1,1 +1,24 @@
 // Navigation code here
+.navigation{
+    background: @nav-bg;
+    padding-top:10px;
+    .center-layout();
+    flex-direction: column;
+    
+    //The code below allows Nav bar to fixed while scrolling
+    top: 0;
+    width: 100%;
+    position: fixed;
+
+    nav{
+        margin: 10px 0; 
+        display: flex;
+        justify-content: space-between;
+        a{
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: @river-bend;
+            margin:0 1.2rem;
+        }
+    }
+}

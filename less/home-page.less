@@ -1,6 +1,26 @@
 // Home Content
 
 .home {
+  //Animated Fade in when webpage loads
+
+  animation-name: fadein;
+  animation-duration: 3s;
+
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+  //Border Radius as per design
+  header{
+
+    img{
+      margin-top: 80px;//added to work with Fixed Nav
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
 
   .intro {
 
@@ -10,7 +30,13 @@
 
     p {
       padding:0 15px;
+
+      @media @phone {
+        .phone-adjust();
+      }
+
     }
+
   
   }
 
@@ -19,12 +45,27 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone{
+      .sky {
+        display: none;
+      }
+      .launch{
+        display: none;
+      }
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone{
+        width: 100%;
+      }
     }
+
+    
+
   }
 
   .visit-planets {
@@ -36,6 +77,9 @@
 
     p {
       margin-top: 13px;
+      @media @phone{
+        .phone-adjust();
+      }
     }
   }
 
@@ -46,24 +90,47 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      padding:10px 10px;
+      margin-top: 10px;
+      flex-direction: column;
+    }
     .walk-text {
       width: 50%;
-
+    @media @phone {
+        width: 100%;
+        order:2;
+      }
       h3 {
         margin-bottom: 10px;
+        @media @phone{
+          margin-top:10px;
+        }
       }
 
       p {
         margin-bottom: 26px;
+        .phone-adjust();
       }
 
       .btn {
+        .button-style(120px, 45px, 1.9rem);
+        @media @phone {
+          .button-style(465px, 45px, 1.9re,);
+          
+        }
       }
+    
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+        margin-left:0;
+        order: 1;
+      }
       
       img {
         width: 100%;

@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    Adaptive website will have some fixed layouts for few specific device widths while fully responsive site can easily work many more devices. Fully responsive site takes longer time build as it requires more detailing
+    of the styles used across the pages.
+
 2. Describe what it means to be mobile first vs desktop first.
 
+    Since the start of webpages, almost 99% initially were view on desktop computers. Nowadays, many people access webpages via their mobile devices more than their traditional computers.
+    This shift in access resulted in developers opt in for more design better experience on mobile first then scale it desktop. Responsive Web design greatly has changed the approach allowing easier time to develop
+    for mobile first and then desktop.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    
+    Setting the font size to 62.5% allows 1 rem to have 10px as font-size relys on base value power of 10. It is then easier to scale rest of page and allow the browser change the font-size, thus increasing accessibility. 
 
 4. How would you describe preprocessing to someone new to CSS?
 
+    A way to organize your CSS and compartmentalize different aspects of styles into individual files so the final traditional CSS is no longer needed to be modified at many places.   
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    Nesting and mixins are allow signficant organizing capabilities and faster way to manage the styles for various containers. 
+    Recoding some of styles in terms of mixins can reduce the clutter but also it requires the mixin doesn't contain too many styles modifiers. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
